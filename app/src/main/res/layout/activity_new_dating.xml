@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="thanhloi.finalproject.NewDatingActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2"
+        android:layout_alignBottom="@+id/addDating"
+        android:foregroundGravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:foregroundGravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Dating:"
+                android:id="@+id/datingname"
+                android:layout_weight="0"
+                android:textSize="15dp"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/name"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:text="Ex: watching movie"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:foregroundGravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Note:"
+                android:id="@+id/textView3"
+                android:layout_weight="0"
+                android:textSize="15dp"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/note"
+                android:layout_weight="0"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:text="Ex: Taking her at home"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place"
+                android:id="@+id/place"
+                android:layout_weight="0"
+                android:textSize="15dp"
+                android:maxLines="1" />
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Address:"
+                android:id="@+id/textView7"
+                android:layout_weight="0"
+                android:textSize="15dp"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:layout_weight="0"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:text="123 Example St, D.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:foregroundGravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Time:"
+                android:id="@+id/textView8"
+                android:layout_weight="0"
+                android:textSize="15dp"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/time"
+                android:layout_weight="0"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Date"
+                android:id="@+id/textView9"
+                android:layout_weight="0"
+                android:textSize="15dp"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/date"
+                android:layout_weight="0"
+                android:foregroundGravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/addDating"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#fff"
+        android:src="@drawable/check"
+        android:scaleType="fitXY"
+        android:contextClickable="true"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:onClick="addNewDatingClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

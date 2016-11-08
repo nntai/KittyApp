@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="firebase_url">https://project-7404440764790796635.firebaseio.com/</string>
+    <string name="facebook_app_id">1603940493229995</string>
+    <string name="firebase_storage_url">gs://project-7404440764790796635.appspot.com</string>
+    <string name="title_activity_maps">Map</string>\
+    <string name="google_map_api">AIzaSyCXpzkkfJRfWcsvA5LZCm707pGF-2CDl7Y</string>
+    <string name="title_activity_guide">Map</string>
+    <string name="title_activity_navigation_setting">NavigationSetting</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ParnerName">Honey</string>
+    <string name="action_settings">Settings</string>
+</resources>
+

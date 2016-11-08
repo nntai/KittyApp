@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="thanhloi.finalproject.LoginSuccess">
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textv"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UploadImage"
+        android:id="@+id/upload"
+        android:layout_gravity="bottom|center_horizontal"
+        android:onClick="uploadImageClick"
+        android:layout_below="@+id/idstartchat"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChatRoom"
+        android:id="@+id/idstartchat"
+        android:layout_gravity="bottom|center_horizontal"
+        android:onClick="startChatClick"
+        android:layout_below="@+id/requestButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RequestList"
+        android:id="@+id/requestButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="requestListClick"
+        android:layout_below="@+id/diary"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:id="@+id/MapButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="MapOnClick"
+        android:layout_above="@+id/DatingButton"
+        android:layout_alignStart="@+id/DatingButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dating"
+        android:id="@+id/DatingButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="DatingClick"
+        android:layout_above="@+id/logout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:id="@+id/logout"
+        android:layout_gravity="center_horizontal"
+        android:onClick="logOutClick"
+        android:layout_above="@+id/memories"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diary"
+        android:id="@+id/diary"
+        android:layout_gravity="center_horizontal"
+        android:onClick="diaryClick"
+        android:layout_below="@+id/memories"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diary"
+        android:id="@+id/memories"
+        android:layout_gravity="center_horizontal"
+        android:onClick="memoriesClick"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/diary"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

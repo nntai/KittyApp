@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Features">
+        <menu>
+            <item
+                android:id="@+id/diary"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Diary" />
+            <item
+                android:id="@+id/chat"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Chatting" />
+            <item
+                android:id="@+id/dating"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Datting" />
+            <item
+                android:id="@+id/memories"
+                android:icon="@drawable/ic_cast_light"
+                android:title="Memories" />
+            <item
+                android:id="@+id/maps"
+                android:icon="@drawable/ic_cast_light"
+                android:title="Find honey" />
+
+            <item
+                android:id="@+id/friend"
+                android:icon="@drawable/ic_cast_on_1_light"
+                android:title="Request" />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_cast_light"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_wallpaper"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Wallpaper" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Contact" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_donate"
+                android:icon="@drawable/ic_cast_light"
+                android:title="Donate" />
+        </menu>
+    </item>
+</menu>
